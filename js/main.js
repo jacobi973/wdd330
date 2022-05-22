@@ -13,6 +13,12 @@ const links = [{
 }, {
     label: "Week4 Team Activity",
     url: 'week4/index_team.html'
+}, {
+    label: "Week5 Team Activity",
+    url: 'week5/index_team.html'
+}, {
+    label: "Week5 Activity",
+    url: 'week5/index.html'
 }]
 
 
