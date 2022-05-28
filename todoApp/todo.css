@@ -1,0 +1,53 @@
+ul {
+    list-style-type:none;
+    padding-inline-start: 0px;
+}
+.bottomRow {
+    display: flex;
+    justify-content: space-between;
+}
+.listHolder {
+    border: 1px solid;
+    list-style-type:none;
+    max-width:400px;
+    padding: 0px 10px 0px 10px;
+    margin: 0 auto
+}
+.newButton {
+    margin: auto;
+    max-width: 400px;
+    padding: 10px;
+}
+#addNew{
+    margin: auto;
+    width: 89%;
+}
+
+.bottomDiv{
+    border-top: 5px solid red;
+}
+h1 {
+    text-align: center;
+   
+}
+.list-group-item {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.list-group-item button{
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-size: 1.5em;
+    cursor: pointer;
+    float: right;
+}
+label{
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+#newB{
+    margin-left: 10px;
+}

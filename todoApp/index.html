@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Terrell ToDo Application</title>
+    <meta name="description" content="Week 6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Yaldevi:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./todo.css">
+    <script defer src="./toDos.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Todos</h1>
+    </header>
+    <main>
+        <div class="listHolder">
+            <ul></ul>
+            <div class="bottomDiv">
+                <ul class="bottomRow">
+                    <li id="numberLeft"></li>
+                    <li id="all"><button onclick="sortAll()">All</button></li>
+                    <li id="active"><button onclick="sortActive()">Active</button></li>
+                    <li id="completed"><button onclick="sortCompleted()">Completed</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="newButton"><input type="text" id="addNew"><button id="newB" onclick="addNew(); ">+</button></div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
