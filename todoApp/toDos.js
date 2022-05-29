@@ -3,6 +3,7 @@
 
 loadList();
 getNumberOfTasks();
+
 window.onload = function () {
     const listholder = document.querySelector('.listHolder');
     listholder.addEventListener('click', function (event) {
@@ -21,6 +22,13 @@ window.onload = function () {
             });
         }
     }, false);
+    
+    document.querySelector('#addNew').addEventListener('keypress', function (event) {
+        if (event.keyCode === 13) {
+            addNew();
+        }
+    });
+
 }
 
 function addNew() {
