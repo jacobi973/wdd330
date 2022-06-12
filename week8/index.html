@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Terrell Home week 4 notes</title>
+    <meta name="description" content="Week 4">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Yaldevi:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <!-- <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css"> -->
+    <script defer src="./main.js"></script>
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Jacob Terrell</h1>
+    </header>
+    <main>
+        <h2>WDD 330: Week 4 Notes</h2>
+        <hr>
+        <h3>What I learned</h3>
+        <h1>Put your <span>dukes</span> up, sire</h1>
+        <ul>
+            <li> One of the way to change up the css is using transform, which is a CSS property that allows you to
+                change the position of an element.
+            </li>
+            <br>
+            <li> When you use transform, you can change the position of an element by changing the x and y coordinates.
+                You can also change the rotation of an element by changing the z coordinate.
+            </li>
+            <br>
+            <li> When using transform, what css property you use first makes a difference in how the element is
+                displayed.
+            </li>
+            <br>
+            <li>
+                <div class="squareContainer">
+                    <div class="squareTranslate">
+                        <div class="content">
+                            Translate happens first!
+                        </div>
+                    </div>
+                    <div class="squareTransform">
+                        <div class="content">
+                            Rotation First
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <br>
+            <li>
+                Canvas has many different ways to create objects in it.
+            </li>
+            <br>
+        </ul>
+        <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn’t support Canvas.
+        </canvas>
+        <canvas id="demo2" class="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn’t support Canvas.
+        </canvas>
+        <article id="ac3">
+            <h1>Wai-Aria? HAHA!</h1>
+            <h2>Form Accessibility</h2>
+
+            <img src="https://openclipart.org/image/800px/111289" data-src="https://openclipart.org/image/800px/111289"
+                alt="WAI-ARIA Cat">
+
+            <div class="content">
+                
+                <p id="mouseContainer" class="mc">
+                    <img data-src="https://openclipart.org/image/800px/111289"
+                        ↵alt="mouse treat" id="mouse1" draggable="true">
+                    <img data-src="https://openclipart.org/image/800px/111289"
+                        ↵alt="mouse treat" id="mouse2" draggable="true">
+                    <img data-src="https://openclipart.org/image/800px/111289"
+                        ↵alt="mouse treat" id="mouse3" draggable="true">
+                </p>
+            </div>
+            <p>
+                <button id="button1" class="button">Button 1</button>
+                <button id="button2" class="button">Button 2</button>
+                <button id="button3" class="button">Button 3</button>
+            </p>
+        </article>
+        <h3>Questions</h3>
+        <ul>
+            <li> Why use SVGs over Canvas?</li>
+            <br>
+            <li>Jow common is it to use SVGs, Canvas, drag and drop, and other things?</li>
+            </li>
+        </ul>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>

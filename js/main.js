@@ -22,6 +22,14 @@ const links = [{
 }, {
     label: "Todo App",
     url: 'todoApp/index.html'
+},
+{
+    label: "Week 8 Notes",
+    url: 'week8/index.html'
+},
+{
+    label: "Week 8 team activity",
+    url: 'week8/week8team.html'
 }]
 
 

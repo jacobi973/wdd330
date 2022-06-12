@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node ./week3/week3Team.js"
+    "start": "node ./week3/week3Team.js",
+    "week8": "node ./week8/week8Team.js"
   },
   "repository": {
 
