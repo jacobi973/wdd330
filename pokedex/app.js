@@ -115,7 +115,7 @@ function handleRightButtonClick() {
 
 function handleAddButtonClick(event) {
     for (let i = 0; i < teamMemberImage.length; i++) {
-        if (teamMemberImage[i].src === 'http://127.0.0.1:5500/pokedex/index.html') {
+        if (teamMemberImage[i].src === window.location.href) {
             teamMemberImage[i].src = pokeFrontImage.src;
             teamMemberName[i].textContent = pokeName.textContent;
             teamMemberName[i].setAttribute('id', parseInt(pokeId.textContent.replace('#', '')));
@@ -127,7 +127,7 @@ function handleAddButtonClick(event) {
 
 function handleSaveButtonClick() {
     for (let i = 0; i < teamMemberImage.length; i++) {
-        if (teamMemberImage[i].src === 'http://127.0.0.1:5500/pokedex/index.html') {
+        if (teamMemberImage[i].src === window.location.href) {
             alert('Please add 6 pokemon to your team');
             return;
         }
