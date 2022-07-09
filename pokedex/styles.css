@@ -522,14 +522,15 @@ button {
     display: grid;
     justify-items: center;
     height: auto;
+    width:auto
   }
   .left-container {
     height: auto;
-    width: 50%;
+    width: 85%;
   }
   .right-container {
     height: auto;
-    width: 50%;
+    width: 85%;
   }
   .bottom-container{
     display: grid;
@@ -539,4 +540,22 @@ button {
   form{
     text-align: center
   }
+}
+
+@media screen and (max-width: 400px) {
+  .left-container {
+    width: 65%;
+  }
+  .left-container__main-section{
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .right-container {
+    height: auto;
+    width: 65%;
+  }
+  .bottom-container__black{
+    margin: 5px;
+  }
+
 }
