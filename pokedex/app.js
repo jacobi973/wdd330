@@ -98,7 +98,9 @@ function fetchPokeData(id) {
             pokeHeight.textContent = data['height'];
             pokeFrontImage.src = data['sprites']['front_default'] || '';
             pokeBackImage.src = data['sprites']['back_default'] || '';
-        });
+        })
+        .catch(err => window.alert('no pokemon found'));
+
 }
 
 function handleLeftButtonClick() {
@@ -163,9 +165,13 @@ function handleDeleteTeamButtonClick() {
 function handleSearchButtonClick() {
     const searchInput = document.querySelector('#myInput');
     const searchValue = searchInput.value;
+    try {
+        if (searchValue) {
+            fetchPokeData(searchValue.toLowerCase());
+        }
+    } catch (error) {
+        alert('No pokemon found');
 
-    if (searchValue) {
-        fetchPokeData(searchValue.toLowerCase());
     }
 }
 
