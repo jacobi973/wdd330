@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+        <title>Node Server</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="indexTeam.js" type="module" defer></script>
+        <script scr="auth.js" type="module" defer>
+
+        </script>
+    </head>
+
+    <body>
+        <main>
+            <h1>Auth Examples applications</h1>
+            <div id="login">
+                <form>
+                  <div>
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Username"
+                      value="user1@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <button type="button" class="btn btn-primary center-block">
+                    Login
+                  </button>
+                </form>
+                <div id="token-display"></div>
+              </div>
+
+              <div id="createPosts" style="display:none;">
+                <form>
+                  <div>
+                    <label for="title">title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="title"
+                      placeholder="newTitle"
+                    />
+                  </div>
+                  <div>
+                    <label for="content">Content</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="content"
+                    />
+                  </div>
+                  <button type="button" class="btn btn-primary center-block">
+                    Create Post
+                  </button>
+                </form>
+              </div>
+
+              <ul id="posts"></ul>
+        </main>
+    </body>
+
+</html>
