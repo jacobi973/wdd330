@@ -122,6 +122,7 @@ function handleAddButtonClick(event) {
             teamMemberName[i].textContent = pokeName.textContent;
             teamMemberName[i].setAttribute('id', parseInt(pokeId.textContent.replace('#', '')));
             bottomContainer[i].classList.remove('hide');
+            bottomContainer[i].classList.add(pokeTypeOne.textContent.toLocaleLowerCase());
             break;
         }
     }
@@ -139,7 +140,8 @@ function handleSaveButtonClick() {
         data.push({
             name: teamMemberName[i].textContent,
             id: teamMemberName[i].getAttribute('id'),
-            image: teamMemberImage[i].src
+            image: teamMemberImage[i].src,
+            type: bottomContainer[i].classList[1]
         });
     }
     localStorage.setItem('pokeTeam', JSON.stringify(data));
@@ -197,6 +199,7 @@ function getData() {
             teamMemberName[i].textContent = dataParse[i].name;
             teamMemberName[i].setAttribute('id', dataParse[i].id);
             bottomContainer[i].classList.remove('hide');
+            bottomContainer[i].classList.add(dataParse[i].type);
         }
         return JSON.parse(data);
     }

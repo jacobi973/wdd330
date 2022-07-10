@@ -318,11 +318,10 @@ body {
   justify-content: space-evenly;
 }
 .bottom-container__black {
-  background-image: url("openPokeball.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: black;
+  background-image: url("openPokeball.png") !important;
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
   padding: 10px;
   margin: 10px;
@@ -370,7 +369,8 @@ body {
 .right-button:active,
 .save-button:active,
 .add-button:active,
-.delete-team-button:active {
+.delete-team-button:active,
+.search-button:active {
   box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -515,6 +515,13 @@ button {
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+.search-button{
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
