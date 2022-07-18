@@ -151,15 +151,20 @@ function handleDeleteButtonClick(event) {
     event.target.parentNode.firstChild.nextSibling.textContent = '';
     event.target.parentNode.nextElementSibling.querySelector('.teamImage').src = ''
     event.target.parentNode.parentNode.parentNode.classList.add('hide');
+    // remove type from bottom container
+    event.target.parentNode.parentNode.parentNode.classList.remove(event.target.parentNode.parentNode.parentNode.classList[1]);
 
 }
 
 function handleDeleteTeamButtonClick() {
     for (let i = 0; i < teamMemberImage.length; i++) {
-        teamMemberImage[i].src = '';
-        teamMemberName[i].textContent = '';
-        teamMemberName[i].setAttribute('id', '');
-        bottomContainer[i].classList.add('hide');
+        if (condition) {
+            teamMemberImage[i].src = '';
+            teamMemberName[i].textContent = '';
+            teamMemberName[i].setAttribute('id', '');
+            bottomContainer[i].classList.add('hide');
+            bottomContainer[i].classList.remove(bottomContainer[i].classList[1]);
+        }
     }
     localStorage.removeItem('pokeTeam');
 }
