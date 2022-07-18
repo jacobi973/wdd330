@@ -117,7 +117,7 @@ function handleRightButtonClick() {
 
 function handleAddButtonClick(event) {
     for (let i = 0; i < teamMemberImage.length; i++) {
-        if (teamMemberImage[i].src === window.location.href) {
+        if (teamMemberImage[i].src === window.location.href && pokeName.textContent !== '') {
             teamMemberImage[i].src = pokeFrontImage.src;
             teamMemberName[i].textContent = pokeName.textContent;
             teamMemberName[i].setAttribute('id', parseInt(pokeId.textContent.replace('#', '')));
@@ -145,6 +145,7 @@ function handleSaveButtonClick() {
         });
     }
     localStorage.setItem('pokeTeam', JSON.stringify(data));
+    alert('Team saved');
 }
 
 function handleDeleteButtonClick(event) {
@@ -158,7 +159,7 @@ function handleDeleteButtonClick(event) {
 
 function handleDeleteTeamButtonClick() {
     for (let i = 0; i < teamMemberImage.length; i++) {
-        if (condition) {
+        if(teamMemberImage[i].src !== window.location.href){
             teamMemberImage[i].src = '';
             teamMemberName[i].textContent = '';
             teamMemberName[i].setAttribute('id', '');
