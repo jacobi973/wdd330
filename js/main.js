@@ -54,6 +54,14 @@ const links = [{
     {
         label: " Final Project PokeDex",
         url: 'pokedex/index.html'
+    },
+    {
+        label: "Final Video Demonstration Short",
+        url: 'https://youtu.be/lPbhO7eNhi4'
+    },
+    {
+        label: "Final Video Demonstration Long",
+        url: 'https://youtu.be/N7jWxM_--6A'
     }
 ]
 
@@ -63,6 +71,10 @@ links.forEach(link => {
 
     let href = document.createElement('a');
     href.setAttribute('href', link.url);
+    if (link.label.includes('Final Video Demonstration')) {
+        href.setAttribute('target', '_blank');    
+        
+    }
     href.textContent = link.label;
 
     week.appendChild(href);
